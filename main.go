@@ -10,6 +10,7 @@ func main() {
 	var myPort string
 	fmt.Print("Введите порт: ")
 	fmt.Scan(&myPort)
+
 	// Обработчик запросов
 	HandleFunc("/", func(w ResponseWriter, r *Request) {
 		log.Println("Получен запрос на /")
